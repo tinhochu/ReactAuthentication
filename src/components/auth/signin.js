@@ -3,9 +3,11 @@ import { reduxForm, Field } from 'redux-form';
 
 
 class Signin extends Component {
-
+  
   handleFormSubmit({ email, password }) {
     console.log(email, password);
+
+    // Need to do something to log user in
   }
 
   render() {
@@ -17,7 +19,7 @@ class Signin extends Component {
           <label>Email:</label>
           <input {...email} className="form-control" />
         </fieldset>
-        
+
         <fieldset className="form-group">
           <label>Password:</label>
           <input {...password} type="password" className="form-control" />
